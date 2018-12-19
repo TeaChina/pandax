@@ -1,26 +1,13 @@
 import React from "react";
-import logo from "../images/logo.png";
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import Header from '../components/header'
+import Footer from '../components/footer'
+
 
 export default () => (
   <div>
-    <AppBar position="static" color="inherit" style={{ 
-        height:'60px',
-        borderBottom: '#f5f3f7 1px solid',
-      }}>
-      <Toolbar variant="dense">
-        <IconButton color="inherit" aria-label="Menu">
-          <MenuIcon />
-        </IconButton>
-        <img src={logo} alt="Logo" height="50px" style={{ marginTop: '25px', }}/>
-      </Toolbar>
-    </AppBar>
+    <Header></Header>
     <div id="main">
       <div className="hero"
             style={{
@@ -36,7 +23,7 @@ export default () => (
               color: 'rgba(255,255,255, .95)',
               paddingTop: '160px',
               paddingBottom: '20px',
-              width: '800px',
+              maxWidth: '800px',
               margin: '0 auto',
             }}
           >Chinese tea surprises in your mailbox twice a month.</h1>
@@ -44,7 +31,7 @@ export default () => (
             style={{
               paddingTop:'20px',
               paddingBottom: '20px',
-              width: '800px',
+              maxWidth: '800px',
               margin: '0 auto',
               color: 'rgba(255,255,255, .95)',
             }}
@@ -65,7 +52,7 @@ export default () => (
       <div className="content"
           style={{
             margin: '0 auto',
-            width: '900px',
+            maxWidth: '900px',
             padding: '30px 0',
           }}
         >
@@ -92,22 +79,5 @@ Property damage from pets is possible, especially with dog breeds that tend to c
     
 
     </div>
-    <footer
-      style={{backgroundColor:'rgba(255,255,255,0.975)', 
-        height:'60px',
-        borderTop: '#f5f3f7 1px solid',
-      }}
-    >
-      <div 
-        style={{
-          margin: '0 auto',
-          width: '900px',
-          textAlign: 'center',
-          padding: '10px 0',
-          color: '#a1a1a1'
-        }}
-      >
-        &copy;pandax
-      </div>
-    </footer>
+    <Footer></Footer>
   </div>)
