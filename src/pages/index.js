@@ -1,54 +1,15 @@
 import React from "react";
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
+
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Hero from '../components/hero'
 
 
 export default () => (
   <div>
     <Header></Header>
     <div id="main">
-      <div className="hero"
-            style={{
-              background: 'no-repeat url("https://images.unsplash.com/photo-1531970227416-f0cddeb1f748?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80")',
-              height: '600px',
-              backgroundSize: 'cover',
-              backgroundPosition: 'bottom center',
-              textAlign: 'center',
-            }}
-          >
-          <h1
-            style={{
-              color: 'rgba(255,255,255, .95)',
-              paddingTop: '160px',
-              paddingBottom: '20px',
-              maxWidth: '800px',
-              margin: '0 auto',
-            }}
-          >Chinese tea surprises in your mailbox twice a month.</h1>
-          <div
-            style={{
-              paddingTop:'20px',
-              paddingBottom: '20px',
-              maxWidth: '800px',
-              margin: '0 auto',
-              color: 'rgba(255,255,255, .95)',
-            }}
-          >$29 monthly with FREE shipping even to United State.</div>
-
-          <TextField
-            required
-            color='secondary'
-            label="Email"
-            type='email'
-            className='xx'
-            variant="filled"
-          />
-          <Button variant="raised" color="secondary" className='xxx' style={{borderRadius: '25px',}}>
-            Subscribe now
-          </Button>
-      </div>
+      <Hero></Hero>
       <div className="content"
           style={{
             margin: '0 auto',
