@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = {
-  footer: {
+  fstyle: {
     backgroundColor:'rgba(255,255,255,0.975)', 
     height:'60px',
     borderTop: '#f5f3f7 1px solid',
   },
-  text: {
+  text1: {
     margin: '0 auto',
     maxWidth: '900px',
     textAlign: 'center',
@@ -21,9 +21,9 @@ function Footer(props) {
   const { classes } = props;
 
   return (
-    <footer className={classes.footer}
+    <footer className={classes.fstyle}
     >
-      <div className={classes.text}
+      <div className={classes.text1}
       >
         &copy;pandax
       </div>
